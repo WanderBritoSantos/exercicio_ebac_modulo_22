@@ -1,0 +1,28 @@
+@use '../variable';
+
+.button{
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    white-space: nowrap;
+
+    &--primary{
+        color:variable.$corTxtBtnPri;
+        background-color:variable.$corBtnPrimary;
+    }
+
+    @media (max-width:600px){
+        display: flex;
+        width: 100%;
+        
+    }
+
+    @media (max-width:1024px){
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+}

@@ -1,0 +1,38 @@
+@use 'variable';
+.footer {
+    background: variable.$corFundFoot;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 0px;
+
+    &__name {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    &__location {
+        font-size: 16px;
+        color:variable.$corFootText1;
+        margin-bottom: 10px;
+    }
+
+    &__email a {
+        font-size: 16px;
+        text-decoration: none;
+        &:hover { text-decoration: underline; }
+    }
+
+    &__links a {
+        color:variable.$corFootText1;
+        margin: 0 4px;
+        text-decoration: none;
+        &:hover { color: #0000f1; }
+    }
+
+    &__copy {
+        margin-top: 12px;
+        font-size: 14px;
+        color:variable.$corFootText2;
+    }
+}

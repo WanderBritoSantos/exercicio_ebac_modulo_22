@@ -1,0 +1,44 @@
+@use '../variable';
+
+.infos-bar{
+   padding: 16px 24px;
+   background-color:variable.$corFundoInf;
+   display: flex;
+   justify-content: space-between;
+   border-radius: 10px;
+
+   &__infos{
+    display: flex;
+    gap: 40px;
+
+
+    &__item{
+        display: block;
+        font-size: 14px;
+        color:variable.$corDeTextInf;
+
+        b{
+            display: block;
+            color:variable.$corDeTextInf;
+            font-size: 18px;
+        }
+    }
+   }
+   @media(max-width:600px){
+    display: block;
+    &__infos{
+        display: block;
+        &__item{
+            margin-bottom: 24px;
+        }
+    }
+
+   }
+
+   @media(max-width:1024px){
+    &__infos{
+        gap:16px;
+    }
+
+   }
+} 
